@@ -3,12 +3,13 @@
 .hero {
     padding: 5.6vw;
     min-height: 80vh;
-    background-image: url(../../src/images/hero_desktop.jpeg);
+    background-image: url(../../src/images/harry_potter_Hero.png);
+    display: grid;
     text-align: center;
     background-size: cover;
 
     @media (max-width: 768px) {
-        background-image: url(../../src/images/hero_celular.jpeg);
+        background-image: url(../../src/images/harry_potter_Hero.png);
         padding-top: calc(50vw + 25px);
         background-size: contain;
         background-repeat: no-repeat;
@@ -21,14 +22,21 @@
     }
 
     &__content {
+        grid-column: 2;
+        margin-left: 600px;
         max-width: 640px;
 
+        @media (max-width: 768px) {
+            max-width: 180px;
+            padding-left: 0px;
+        }
         &__branding {
             max-width: 320px;
             margin: 0 auto 38px;
 
             @media (max-width: 768px) {
                 max-width: 180px;
+                
             }
         }
 
